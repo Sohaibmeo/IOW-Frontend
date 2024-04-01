@@ -1,0 +1,510 @@
+.formWrapper{
+
+.outerForm {
+  min-width: 29rem;
+  padding: 1rem 2rem 5.5rem;
+  background: rgb(103, 95, 89);
+  z-index: 100;
+  transition: width 0.5s ease-in-out 0s;
+  position: relative;
+  min-height: calc(100vh - 4.125rem);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.loginBlock {
+  display: block;
+}
+.headingSignin {
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  text-align: center;
+  overflow: visible;
+  padding: 0.9rem 0rem 0.5rem;
+color: rgb(103, 95, 89);
+font-weight: bold;
+}
+
+.headingWPicture {
+  display: flex;
+  justify-content: center;
+}
+.textloginHead {
+  margin: 0px 0px 0.38rem;
+  display: inline-flex;
+  color: rgb(103, 95, 89);
+  font-size: 1.13rem;
+  line-height: 1.33;
+  font-weight: bold;
+  font-family: THICCCBOI-Bold;
+}
+.imageFormLogo {
+  width: 9.5rem;
+  height: 1.4rem;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.Form {
+  border: 0.0625rem solid rgb(171, 171, 171);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  max-height: 34.688rem;
+  margin-top: 0.875rem;
+  padding: 0.313rem 1.875rem 0.438rem;
+}
+.innerForm {
+  padding-bottom: 1.875rem;
+  padding-left: 0.4375rem;
+  padding-right: 0.5rem;
+}
+.CountinueGoogle {
+  color: black;
+  display: flex;
+  width: 100%;
+  border: 1px solid #5c727d;
+  font-size: 18px;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  background-color: white;
+  padding: 6px 16px;
+  min-width: 64px;
+  font-weight: 500;
+  letter-spacing: 0.02857em;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+    &:hover {
+       background-color: #5C727D;
+
+    }
+}
+.buttonLabel{
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        vertical-align: middle;
+}
+.googleLogo{
+    height: 30px;
+    width:30px;
+
+}
+.spanCountinueGoogle{
+    vertical-align: middle;
+    margin-left:10px;
+}
+.orPart {
+        font-family: Arial,
+        Helvetica,
+        sans-serif;
+color: #5C727D;
+margin: 10px 0 10px 0;
+display: flex;
+align-items: center;
+flex-direction: row;
+}
+.line{
+    color: #5C727D;
+    margin:10px 0 10px 0;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+        flex-grow: 1;
+        border-bottom: 1px solid #5C727D;
+            margin-right: 6px;
+}
+.orText{
+    color: #5C727D;
+font-size: 16px;
+text-align: left;
+font-weight: normal;
+line-height: 21px;
+}
+.textFeildInput{
+        width: 100%;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            flex-direction: column;
+            vertical-align: top;
+}
+.inputFeildForm {
+    color: #19303D;
+    width: 100%;
+    border: 1px solid #5C727D;
+    font-size: 18px;
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+    border-radius: 4px;
+    background-color: transparent;
+text-align: left;
+align-items: center;
+font-weight: normal;
+line-height: 1.1876em;
+}
+.inputFeild{
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin-left: 10px;
+        padding: 18.5px 14px;
+            font: inherit;
+            color: inherit;
+            width: 98%;
+            border: 0;
+            height: 1.1876em;
+            margin: 0;
+            display: block;
+            padding: 6px 0 7px;
+       
+        
+        }
+.space{
+    margin-top:31px;
+}
+.SignUpDiv{
+}
+.buttonCountinueWithGoogle{
+
+    color: #fff;
+    width: 90%;
+    font-size: 18px;
+    box-shadow: none;
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+    border: 50%;
+    border-radius: 30px;
+    background-color: #19303D;
+        padding: 6px 16px;
+font-weight: 500;
+line-height: 1.75;
+    letter-spacing: 0.02857em;
+
+}
+.googleLogo1{
+     height: 20px;
+     width:20px;
+    //  margin-top: 5px;
+     margin-right: 10px;
+
+}
+.buttonCountinueWithGoogleLabel{
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    }
+.stytch{
+    text-align:center ;
+        font-family: Arial,
+        Helvetica,
+        sans-serif;
+
+}
+.imageStytch{
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+.cardFormLogin {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 3.375rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0.19rem 0.31rem 0px,
+    rgb(0 0 0 / 12%) 0px 0.06rem 1.13rem 0px,
+    rgb(0 0 0 / 14%) 0px 0.38rem 0.63rem 0px;
+    position: relative;
+    overflow: visible;
+    padding: 2.4rem 2rem;
+}
+.cardTextFormLogin{
+        margin: 0px 0px 0.38rem;
+        color: rgb(103, 95, 89);
+        font-size: 1.13rem;
+        line-height: 1.33;
+        font-weight: bold;
+        font-family: THICCCBOI;
+}
+.avatarsAndStars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.singleStar{
+    height: 1.7rem;
+    background-color: rgb(33, 150, 83);
+    margin-right: 0.138rem;
+    float: left;
+}
+.star{
+        padding: 0.25rem;
+}
+.tickTopLeft{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: -1.5rem;
+    left: -1.2rem;
+}
+
+@media (min-width: 780px) {
+  .headingSignin {
+    margin-top: 1.375rem;
+    border-radius: 0.5rem;
+  }
+}
+
+
+@media(max-width: 786px) {
+
+ 
+  .outerForm {
+    min-width: 46rem;
+    margin-left: -4px;
+
+  }
+}
+
+  
+@media screen and (max-width: 1263px) {
+  .headingSignin {
+    display: none;
+  }
+
+  .cardFormLogin {
+    display: none;
+  }
+
+ 
+  .outerForm {
+    margin-left: 275px;
+    background: rgb(240, 237, 235);
+    min-width: 43rem;
+  }
+
+
+}
+@media(max-width: 280px) {
+ .outerForm {
+   margin-left: 275px;
+   background: rgb(240, 237, 235);
+   min-width: 43rem;
+ }
+
+
+}
+@media screen and (max-width: 1263px) {
+  .outerForm {
+    min-width: 40rem;
+  }
+
+
+}
+
+@media screen and (max-width: 1177px) {
+  .outerForm {
+    min-width: 35rem;
+  }
+
+ 
+
+  //  .MuiTypography-screenminsignup {
+  //     font-size: 1.5rem;
+  //  }
+}
+
+@media screen and (max-width: 1113px) {
+  .outerForm {
+    min-width: 30rem;
+  }
+}
+
+@media screen and (max-width: 1113px) {
+  .outerForm {
+    min-width: 30rem;
+  }
+
+}
+
+@media screen and (max-width: 1015px) {
+  .outerForm {
+    min-width: 26rem;
+  }
+
+
+}
+
+@media screen and (max-width: 949px) {
+  .outerForm {
+    min-width: 30rem;
+    margin-left: 235px;
+
+  }
+
+  .outer {
+    margin-left: 88px;
+    width: 301px;
+    margin-right: -81px;
+  }
+
+
+  .headingPart1 {
+    width: 300px;
+    font-size: 2.5rem;
+    padding-right: 0px;
+  }
+
+  .headingPart2 {
+    width: 309px;
+    font-size: 2.5rem;
+    padding-right: 0px;
+  }
+
+  .midParagraph {
+    font-size: 1.35rem;
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 851px) {
+
+
+  .outer {
+    margin-left: 115px;
+    width: 301px;
+    margin-right: -180px;
+  }
+
+
+}
+
+@media screen and (max-width: 749px) {
+  .outerForm {
+    min-width: 44rem;
+    margin-left: -4px;
+
+  }
+
+}
+
+@media screen and (max-width: 705px) {
+  .outerForm {
+    min-width: 40rem;
+    margin-left: -4px;
+
+  }
+
+
+}
+
+@media screen and (max-width: 705px) {
+  .outerForm {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+ 
+}
+
+@media screen and (max-width: 659px) {
+  .outerForm {
+    min-width: 35rem;
+    // margin-left: auto;
+
+  }
+
+ 
+}
+
+@media screen and (max-width: 579px) {
+  .outerForm {
+    min-width: 30rem;
+    // margin-left: auto;
+
+  }
+
+ 
+}
+
+@media(max-width: 767px) {
+    .outerForm {
+      // min-width: 28rem;
+      margin-left: auto;
+      // width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 537px) {
+  .outerForm {
+    min-width: 28rem;
+    // margin-left: auto;
+
+  }
+
+
+}
+
+@media screen and (max-width: 499px) {
+  .outerForm {
+    min-width: 26rem;
+    // margin-left: auto;
+
+  }
+
+}
+@media(max-width: 540px) {
+ .outerForm {
+   margin-left: 20px;
+
+ }
+
+}
+@media(max-width: 375px) {
+  .outerForm {
+    margin-left: auto;
+
+  }
+
+}
+@media screen and (max-width: 465px) {
+  .outerForm {
+    min-width: 20rem;
+    // margin-left: auto;
+
+  }
+
+ 
+}
+  @media(max-width: 786px) {
+     .outerForm {
+       min-width: 20rem;
+       // margin-left: auto;
+
+     }
+  }
+
+@media screen and (max-width: 320px) {
+  .outerForm {
+    padding-left: 0px;
+    padding-right: 0px;
+    min-width:100px;
+
+  }
+
+
+}
+
+ 
+
+}
+

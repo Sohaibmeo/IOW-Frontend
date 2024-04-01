@@ -1,0 +1,20 @@
+.container {
+  .tableRow {
+    .table_cell {
+      border-bottom: none;
+      font-size: 11px;
+      &:first-child {
+        h3 {
+          margin: 0;
+        }
+        span {
+          font-size: 11px;
+        }
+      }
+
+      .dropdownBtn {
+        border: 1px solid blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.documentWrapper {
+  .documentSettingContainer {
+    margin:  0px 0px;
+    height: auto;
+  }
+  .documentHeadingContainer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.38rem;
+    margin: 0rem;
+  }
+  .docHeading {
+    margin: 0px;
+    font-size: 2.25rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.39;
+  }
+  .docInfoContainer {
+    width: 42.5rem;
+
+    border-radius: 0.813rem;
+    height: auto;
+    margin: 0.875rem 0px 0px;
+  }
+
+  .documentLearnMoreLink {
+    margin-bottom: 0px;
+    align-self: center;
+    background: transparent;
+    border: unset;
+    color: rgb(67, 59, 206);
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.43;
+    display: block;
+  }
+  .documentDescription {
+    font-size: 18px;
+    margin: 0.5rem 0px 0px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.87);
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.33;
+    text-align: left;
+    width: 100%;
+  }
+  .tableDesign {
+    display: table;
+    border-spacing: 0px;
+    margin-top: 0.875rem;
+    border-collapse: collapse;
+    border-radius: 0.8125rem;
+    margin-bottom: 3.125rem;
+    outline: rgb(219, 213, 213) solid 0.0625rem;
+    overflow: hidden;
+  }
+  .headDesign {
+    display: table-header-group;
+    font-size: 0.875rem;
+    text-align: center;
+    height: 3.5rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    background-color: rgb(245, 243, 241);
+    color: rgb(86, 78, 74);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .documentWrapper {
+    .documentSettingContainer {
+      .documentHeadingContainer{
+        .docHeading{
+          font-size: 1.38rem;
+          font-stretch: normal;
+          font-style: normal;
+          font-weight: bold;
+          letter-spacing: normal;
+          line-height: 1.39;
+        }
+      }
+    }
+  }
+}

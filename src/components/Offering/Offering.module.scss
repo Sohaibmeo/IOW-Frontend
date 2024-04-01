@@ -1,0 +1,644 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aquamarine;
+    margin-top: 70px;
+    .content{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.25rem 2rem 2rem;
+        position: relative;
+        box-sizing:border-box;
+        @media (max-width: 1279.95px){
+            padding: 1rem 1rem 7.5rem;
+            overflow-x: hidden;
+        }
+        .offerpage {
+            padding-right: 22.375rem;
+            @media (max-width: 1279.95px){
+                padding-right: 0px;
+            }
+            .preheader{
+                padding-left: 0rem;
+                margin-top: 0rem;
+                margin-bottom: 0.75rem;
+                color: rgb(33, 33, 33);
+                font-family: THICCCBOI;
+                font-weight: 400;
+                font-size: 0.875rem;
+                align-self: flex-start;
+                z-index: 1000;
+                .navbar{
+                    margin: 0px;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.6);
+                    line-height: 1.188rem;
+                    .link{
+                        color: blue;
+                    }
+                }
+            }
+            .titlediv{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.938rem;
+                justify-content: space-between;
+                .title{
+                    font-family: THICCCBOI-Bold;
+                    font-weight: 600;
+                    font-size: 1.625rem;
+                    line-height: 1.75rem;
+                    color: rgb(40, 35, 32);
+                    @media (min-width: 768px){
+                            font-family: THICCCBOI-SemiBold;
+                            font-size: 3rem;
+                            line-height: 3.75rem;
+                    }
+                }
+                .titleicon{
+                    height: 2.5625rem;
+                    width: 3.5rem;
+                }
+            }
+        }
+    }
+}
+//offer video
+.offercontent{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .offervideo{
+        position: relative;
+        .videosize{
+            width: 100% !important;
+            height: 14.38rem !important;
+            @media (min-width: 768px){
+                  height: 38.25rem !important;
+                  width: auto !important;
+            }
+            .videopadding{
+                width: 100%; 
+                height: 100%;
+            }
+        }
+        .videodetail{
+            display: flex;
+            height: 4.19rem;
+            border-radius: 0px 0px 0.813rem 0.813rem;
+            border: 0.063rem solid rgb(194, 189, 185);
+            box-shadow: rgb(0 0 0 / 14%) 0rem 0.063rem 0.063rem, rgb(0 0 0 / 12%) 0rem 0.125rem 0.063rem, rgb(0 0 0 / 20%) 0rem 0.063rem 0.188rem;
+            background-color: rgb(255, 255, 255);
+            .videobox{
+                width: 63.13rem;
+                font-family: THICCCBOI-Medium;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1rem;
+                text-align: center;
+                letter-spacing: 0.025rem;
+                color: rgb(33, 33, 33);
+                padding: 1.5rem 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;   
+                .videodescription{
+                    display: flex;
+                    gap: 1rem;
+                    .videoicon{
+                        width: 0.88rem;
+                        height: 1.25rem;
+                    }
+                    .videotext{
+                        height: 1rem;
+                        flex-grow: 0;
+                        font-family: THICCCBOI-Medium;
+                        font-size: 1rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: 0rem;
+                        text-align: left;
+                        color: rgb(33, 33, 33);
+                        align-self: center;
+                    }
+                }
+            }
+            .none{
+                @media (max-width: 768px){
+                    display: none;
+
+                }
+            }
+            .border{
+                border-left: 0.125rem solid rgb(222, 218, 215);
+                height: 2.625rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+
+// $white-color:rgb(204, 108, 34);
+$font: THICCCBOI;
+$font-regular: THICCCBOI-Regular;
+$Font-Bold: THICCCBOI-Bold;
+//Tokenomics
+.tokenomics{
+    width: 20.375rem;
+    height: 26.2rem;
+    box-sizing: border-box;
+    border-radius: 1.813rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.161rem solid rgb(94, 94, 94);
+    box-shadow: rgb(0 0 0 / 14%) 0px 0.5rem 0.625rem, rgb(0 0 0 / 12%) 0px 0.188rem 0.875rem, rgb(0 0 0 / 20%) 0px 0.313rem 0.313rem;
+    font-family: THICCCBOI;
+    color: white;
+    position: fixed;
+    padding: 0.13rem 0.13rem 2.19rem;
+    background-color: rgb(40, 35, 32);
+    right: 2rem;
+    top: 16rem;
+    @media (max-width: 1279.95px){
+        display: none;
+    }
+    .header{
+        width: 100%;
+        border-top-left-radius: 1.813rem;
+        border-top-right-radius: 1.813rem;
+        padding-top: 0.438rem;
+        padding-bottom: 2.625rem;
+        text-align: center;
+        .firstHeading{
+            min-width: 11.81rem;
+            height: 1rem;
+            font-family: THICCCBOI-Bold;
+            text-transform: uppercase;
+            letter-spacing: 0.25rem;
+            line-height: normal;
+            margin: 0px auto 0.6rem;
+            font-size: 0.88rem;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+        }
+        .subHeading{
+            text-transform: uppercase;
+            width: 7.375rem;
+            height: 0.875rem;
+            margin: 0.56rem auto 0px;
+            font-family: THICCCBOI-Regular;
+            font-size: 0.75rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.25rem;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+    }
+    .details{
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 1.813rem;
+        border-bottom-right-radius: 1.813rem;
+        text-align: right;
+        letter-spacing: 0.02em;
+        padding-bottom: 1.7rem;
+        background: rgb(40, 35, 32) !important;
+        .annualReturn{
+            padding: 0rem 0.938rem 0px;
+            line-height: 3.25rem;
+            display: flex;
+            justify-content: flex-end;
+            .text1{
+                margin: 0px 0.813rem 0px 0px;
+                font-size: 1.425rem;
+                font-family: THICCCBOI-Bold;
+                font-weight: 700;
+                line-height: 3.25rem;
+            }
+            .text2{
+                margin: 0px 0px 0px 0px;
+                font-size: 2.325rem;
+                font-family: THICCCBOI-Bold;
+                font-weight: 700;
+                line-height: 3.25rem;
+            }
+        }
+        .cashOn{
+            display: flex;
+            justify-content: flex-end;
+            align-items: baseline;
+            .t1{
+                font-family: $font-regular;
+                font-weight: 400;
+                font-size: 1.325rem;
+                line-height: 2.5rem;
+                letter-spacing: 0.064rem;
+                text-align: right;
+                justify-self: flex-end;
+                padding: 0px;
+                margin: 0px;
+                width: 70%;
+            }
+            .t2{
+                font-family: $font-regular;
+                font-weight: 400;
+                font-size: 1.325rem;
+                line-height: 2.5rem;
+                letter-spacing: 0.064rem;
+                display: inline;
+                margin-right: 0.938rem;
+                flex: 1 0 25%;
+            }
+        }
+        .funded{
+            font-family: THICCCBOI-Regular;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.875rem;
+            letter-spacing: 0.064rem;
+            margin-top: 0.625rem;
+            display: flex;
+            justify-content: flex-end;
+            .textDiv{
+                text-align: right;
+                justify-self: flex-end;
+                padding: 0px;
+                margin: 0px;
+                .text{
+                    font-weight: 500;
+                    font-family: THICCCBOI-Regular;
+                    letter-spacing: 0.064rem;
+                    padding: 0px;
+                    margin: 0px 0px 0px auto;
+                    font-size: 1.13rem;
+                    width: 4.25rem;
+                    height: 2.63rem;
+                    line-height: 1.8;
+                }
+            }
+            .round{
+                width: 9.88rem;
+                background: white;
+                border: 0.063rem solid rgb(236, 145, 18);
+                border-radius: 1.25rem;
+                margin-left: 0.875rem;
+                margin-right: 0.938rem;
+                position: relative;
+                overflow: hidden;
+                height: 1.75rem !important;
+                .smallRound{
+                    background: rgb(236, 145, 18);
+                    width: 14.4%;
+                    height: 100%;
+                    border-radius: 1.25rem;
+                }
+                .roundText{
+                    display: inline;
+                    margin-top: -0.0625rem;
+                    position: absolute;
+                    right: 0.75rem;
+                    top: 0.125rem;
+                    font-family: THICCCBOI-Bold;
+                    font-weight: 700;
+                    line-height: 1.75rem;
+                    text-align: right;
+                    color: rgb(33, 33, 33);
+                    text-shadow: rgb(255 255 255 / 50%) -0.063rem -0.063rem;
+                    font-size: 1.125rem !important;
+                }
+            }
+        }
+    }
+    .invest{
+        display: flex;
+        justify-content: center;
+        .button{
+            justify-content: center;
+            box-sizing: border-box;
+            outline: 0px;
+            margin: 0px 0px -6.5rem;
+            cursor: pointer;
+            user-select: none;
+            vertical-align: middle;
+            appearance: none;
+            text-decoration: none;
+            min-height: auto;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            width: auto;
+            box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px;
+            color: rgb(255, 255, 255);
+            z-index: 100;
+            position: absolute;
+            height: 2.563rem;
+            min-width: 11.25rem;
+            bottom: 19%;
+            font-family: THICCCBOI-Bold;
+            background: rgb(180, 111, 14);
+            border: 0.063rem solid rgb(236, 145, 18);
+            padding: 0.75rem 1.13rem;
+            border-radius: 2.5rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.125rem;
+            text-transform: uppercase;
+        }
+        .span{
+            overflow: hidden;
+            pointer-events: none;
+            position: absolute;
+            z-index: 0;
+            inset: 0px;
+            border-radius: inherit;
+        }
+    }
+}
+////summary
+@mixin contentBox{
+     box-shadow: rgb(0 0 0 / 15%) 0px 0.125rem 0.625rem;
+    border-radius: 0.813rem;
+    padding: 1.5rem;
+    color: rgb(33, 33, 33);
+    font-family: THICCCBOI;
+    background-color: rgb(255, 255, 255);
+}
+@mixin contentHeader{
+    font-family: THICCCBOI-Bold;
+    font-weight: 700;
+    font-size: 1.38rem;
+    line-height: 1.56rem;
+    color: rgb(33, 33, 33);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 768px) {
+        font-size: 2.25rem;
+        line-height: 3.125rem;
+    }
+    .text{
+        line-height: 3.125rem;
+    }
+}
+@mixin contentParagraph{
+    font-family: THICCCBOI-Medium;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    .paragraph{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 1.75rem;
+        justify-content: flex-start;
+        margin-top: 1.5rem;
+        padding: 0;
+       
+    }
+}
+@mixin contentLine{
+        color: #212121;
+        font-family: THICCCBOI-Medium,sans-serif!important;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.67;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+}
+//summary
+.summary{
+    @include contentBox();
+    .heading{
+       @include contentHeader();
+    //    padding-top: 40px;
+        .button{
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            outline: 0px;
+            margin: 0px 0px 1.75rem;
+            cursor: pointer;
+            user-select: none;
+            vertical-align: middle;
+            appearance: none;
+            text-decoration: none;
+            min-width: 64px;
+            padding: 6px 16px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            z-index: 100;
+            height: 2.563rem;
+            font-family: THICCCBOI-Bold;
+            background: rgb(255, 255, 255);
+            border: 0.063rem solid rgb(67, 59, 206);
+            border-radius: 2.5rem;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            box-shadow: none;
+            color: rgb(67, 59, 206);
+            text-transform: capitalize;
+            .icon{
+                margin-right: 0.375rem;
+                width: 1rem;
+                height: 1rem;
+                flex-grow: 0;
+            }
+            .text{
+                flex-grow: 0;
+                font-family: THICCCBOI-Bold;
+                font-size: 0.72rem;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: rgb(67, 59, 206);
+                white-space: nowrap;
+            }
+            .span{
+                overflow: hidden;
+                pointer-events: none;
+                position: absolute;
+                z-index: 0;
+                inset: 0px;
+                border-radius: inherit;
+            }
+            @media (max-width: 768px) {
+            width: 150px;
+            }
+        }
+    }
+    .description{
+        @include contentParagraph();
+        .p{
+            @include contentLine();
+        }
+    }
+}
+// webinar
+.webinar{
+    @include contentBox();
+    .heading{
+        @include contentHeader();
+    }
+    .description{
+        @include contentParagraph();
+        .iconDiv{
+            width: 55px;
+            height: 55px;
+            border-radius: 50px;
+            background-color: white;
+            border: 1px solid rgb(67, 59, 206);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            .icon{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                width: 55px;
+                height: 55px;
+                align-self: center;
+                cursor: pointer;
+            }
+        }
+        .p{
+            @include contentLine();
+        }
+        .paraHead{
+            font-weight: bold;
+        }
+    }
+}
+//investment
+.investment{
+    @include contentBox();
+    .heading{
+        @include contentHeader();
+    }
+    .description{
+        @include contentParagraph();
+        .iconDiv{
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            .icon{
+                cursor: pointer;
+            }
+        }
+        .p{
+            @include contentLine();
+        }
+        .paraHead{
+            font-weight: bold;
+        }
+    }
+}
+//Map
+.map{
+    @include contentBox();
+    .heading{
+        @include contentHeader();
+    }
+    .mapSize{
+        padding-top: 30px;
+        width: 100% ;
+        height: 50 px;
+        @media (min-width: 768px){
+              height: 38.25rem ;
+              width: auto;
+        }
+        .mapPadding{
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+        }
+    }
+}
+.desc{
+    margin: 0px;
+    line-height: 2.0875rem;
+    font-weight: 500;
+    padding-top: 0.9375rem;
+    font-family: THICCCBOI-Bold;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.87);
+    .link{
+        text-decoration: none;
+    }
+}
+// document
+.documents{
+    @include contentBox();
+    .heading{
+        @include contentHeader();
+    }
+    .verifyDiv{
+        border-radius: 20px;
+        border: 1px solid rgb(213, 213, 214);
+        background-color: rgb(255, 255, 255);
+        .heading{
+            border-radius: 20px 20px 0px 0px;
+            padding: 20px;
+            background-color: rgb(234, 234, 236);
+            display: flex;
+            justify-content:space-around;
+            gap: 0.313rem;
+            align-items: center;
+            .header{
+                font-family: THICCCBOI-SemiBold;
+                color:rgb(95, 96, 97);
+            }
+        }
+        .content{
+            padding-top: 60px;
+            padding-bottom: 60px;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            .p{
+                font-weight: bold;
+                font-family: THICCCBOI;
+                font-size:x-large;
+                @media (max-width: 680px){
+                    font-size: large;
+                
+                }
+                @media (max-width: 540px){
+                    font-size: small;
+                
+                }
+                @media (max-width: 420px){
+                    font-size:x-small;
+                
+                }
+            }
+            .button{
+                border-radius: 40px;
+                background-color: rgb(74, 35, 214);
+                border: 2px solid;
+                color: white;
+            }
+        }
+    }
+}

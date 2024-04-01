@@ -1,0 +1,8 @@
+$screen-md-max: 1279px;
+
+
+@mixin md {
+  @media screen and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}

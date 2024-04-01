@@ -1,0 +1,35 @@
+$max-height: 440px;
+
+.container {
+  width: 100%;
+  overflow: hidden !important;
+
+  .tableHeight{
+    max-height: $max-height !important;
+  }
+
+  .tableFooter {
+    color: gray;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    .tableCell {
+      color: black;
+      border: none;
+      border-top: 1px solid gray;
+      font-weight: 600;
+    }
+  }
+}
+
+.emptyTableContainer {
+  width: 323%;
+  padding: 7rem 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 12px;
+  max-height: $max-height !important;
+}

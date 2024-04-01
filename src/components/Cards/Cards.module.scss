@@ -1,0 +1,202 @@
+@mixin label {
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border-radius: 9999px;
+    background-color: #282320;
+    box-shadow: 3;
+    border: 1px solid grey;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@mixin flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin common-margin-top{
+    margin-top: 12px;
+}
+
+.wholeCard{
+    border-radius: 0%;
+    margin-top: 50px;
+    position: relative;
+    overflow: visible !important;
+    width:400px;
+    transform: scale(0.8);
+    box-shadow: 0 0 5px 5px #b6aca6;
+    &:hover {
+        box-shadow: rgb(209, 143, 51) 0px 0rem 2.5rem;
+        .overlappingText{
+            box-shadow: rgb(209, 143, 51) 0px 0rem 2.5rem;
+            transform: scale(1.4);
+        }
+        .button{
+            background-color: #F29200;
+        }
+    }
+    .clickable{
+        .trending{
+            background-color: rgba(239, 223, 8, 1);
+        }
+        .sold-out{
+            color:grey !important;
+            background-color: white;
+        }
+        .new{
+            background-color: green;
+        }
+        .dontDisplay{
+            display: none !important;
+        }
+        .cardTrendText {
+            text-transform: capitalize;
+            margin-top: 2%;
+            margin-left: 5%;
+            position: absolute;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 9999px;
+            color:white;
+            font-weight: 700;
+            .cardTrendIcon{
+                color:white;
+            }
+          }
+        .onImageText{
+            position: absolute;
+            top:28%;
+            left:7%;
+            color:#efecea;
+            .insideImageHeading{    
+                @include label;
+                padding-top: 2px;
+            }
+            .imageMiddleText{
+                margin-top: 7px;
+                font-size: 25px;
+                font-weight: 800;
+            }
+            .imageBottomText{
+                margin-top: 7px;
+            }
+        }
+        
+        .overlappingText{
+            position: absolute;
+            top: 47%;
+            right:7%;
+            color:#efecea;
+            position: absolute;
+            display: inline-block;
+            margin-bottom: 30px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 15px;
+            background-color: #282320;
+            transition: transform .2s;
+            line-height: 50px;
+            .flexText{
+                @include flex-end;
+                .headingOverlap{
+                    font-weight: 900;
+                    line-height: 35px;
+                    margin-right: 9px;
+                    font-size: 12px;
+                }
+                .returnPercent{
+                    font-size: 24px;
+                    font-weight: 900;
+                }
+                .smallText{
+                    justify-content: end;
+                    font-size: 9px;
+                    line-height: 23px;
+                    margin-right: 9px;
+                }
+                .smallTextPercent{
+                    font-size: 12px;
+                }
+            }
+        }
+        
+        .coverPhoto{
+            height: 260px;
+            width: 100%;
+        }
+        
+        .cardContent{
+            background-color: #efecea;
+            .gridWrapper{
+                .contentLeft{
+                    display: grid;
+                    justify-items: center;
+                    .bigGapTop{
+                        margin-top: 40px;
+                        margin-bottom: 10px;
+                    }
+                    .managerLogo{
+                        width: 80%;
+                        height: 40px;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .divider{
+                    margin-bottom: 10%;
+                }
+
+                .contentRight{
+                    padding-top: 15%;
+                    padding-left: 3%;
+                    .flexText{
+                        @include flex-end;
+                        .boldValue{
+                            font-weight: 600;
+                        }
+                        .contentRightTopText{
+                            margin-right: 40px;
+                        }
+                        .contentRightMiddleText{
+                            @include common-margin-top;
+                            margin-right: 48px;
+                        }
+                        .contentRightBottomText{
+                            @include common-margin-top;
+                        }
+                        .tokenPrice{
+                            @include common-margin-top;
+                        }
+                        .highlightedFundedValue{
+                            font-weight: 600;
+                            margin-top: 9px;
+                            margin-left: 4px;
+                            padding-left: 72px;
+                            padding-right: 5px;
+                            background-color: #F29200;
+                            line-height: 30px;
+                            border-radius: 9999px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .link{
+        padding: 10px 50px 10px 50px;
+        color: white;
+        position:absolute;
+        bottom:-3%;
+        right:23%;
+        border-radius: 9999px;
+        background-color: #B87000;
+        margin-top:200px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    
+}

@@ -1,0 +1,164 @@
+$bg-secondary: rgb(239, 236, 234);
+$bg-primary: rgb(251, 249, 247);
+$bg-buttons: rgb(68, 65, 203);
+
+@use '../../styles/media-queries.scss' as *;
+
+.container {
+  font-family: 'Thicccboi', sans-serif;
+  display: flex;
+  padding: 2rem 1.5rem;
+  background-color: $bg-primary;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  @include md {
+    flex-direction: column;
+    -webkit-box-align: center;
+  }
+  .leftMenu {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .portfolioCard {
+      background-color: $bg-secondary;
+      padding: 11px 21px;
+      border-radius: 10px;
+
+      .cardHeader {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        .portfolioCardTitle {
+          font-size: 25px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        .portfolioCardLink {
+          margin: 0;
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: rgb(75, 72, 206);
+          text-decoration: none;
+        }
+      }
+      .cardBody {
+        .estateHoldings {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+          .estateTitle {
+            text-align: center;
+            margin-top: 18px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          .estateCard {
+            background-color: $bg-primary;
+            border: none;
+            margin: 0px 20px;
+            width: 45%;
+            padding: 19px 40px;
+            border-radius: 10px;
+            box-shadow: -2px 3px 17px -3px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -2px 3px 17px -3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -2px 3px 17px -3px rgba(0, 0, 0, 0.75);
+            .estateCardValue {
+              font-size: 40px;
+              font-weight: 600;
+              text-align: center;
+              padding: 0;
+              margin: 0;
+            }
+          }
+        }
+
+        .estatePropertyContainer {
+          display: flex;
+          margin: 10px;
+          .estatePropertyContainerItem {
+            width: 33%;
+            margin: 2px;
+            .title {
+              text-align: center;
+              font-size: 13px;
+              margin: 0;
+              margin-top: 4px;
+              margin-bottom: 5px;
+              font-weight: 500;
+            }
+            .card {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 10px;
+              background-color: $bg-primary;
+              padding: 19px 40px;
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rightMenu {
+    flex: 2;
+    width: 66%;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    @include md {
+      width: 100%;
+    }
+
+    .rightMenuBtn {
+      display: flex;
+      gap: 0.6rem;
+
+      .investmentPledgeTableBtn {
+        border-radius: 17px;
+        padding: 7px 1.2rem;
+        background: rgb(234, 232, 231);
+        border: none;
+        cursor: pointer;
+        &:focus {
+          background: $bg-buttons;
+          color: white;
+        }
+      }
+    }
+
+    .rightMenuHeading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      margin-top: 1.6rem;
+      h3 {
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.125rem;
+      }
+      .viewMarketplaceBtn {
+        border-radius: 17px;
+        width: 12rem;
+        background-color: $bg-buttons;
+        color: white;
+        padding: 13px 0;
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

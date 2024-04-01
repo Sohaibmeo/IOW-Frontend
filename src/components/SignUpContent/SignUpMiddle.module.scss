@@ -1,0 +1,137 @@
+@mixin inputFormCSS{
+    background-color: white;
+    border: 1px solid #CACACA;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 4%;
+    margin-top: 3%;
+    &hover{
+        border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+}
+@mixin commonHeading{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.signUpWrapper{
+    background-color: #fbf9f7;
+    height: 88vh;
+    padding-top: 10px;
+    min-width: 75%;
+    padding: 10px 10% 0px 10%;
+    .textTop{
+        padding-top: 3%;
+        text-align: center;
+        font-weight: bold;
+    }
+    .totalGrid{
+        justify-content: center;
+        padding-top: 5%;
+        .leftSide{
+            width: 55%;
+            padding-right: 10%;
+            .gridHeading{
+               @include commonHeading;
+               margin-bottom: 6%;
+            }
+            .gridHeading2{
+                color: rgb(82, 74, 69);
+                margin-bottom: 6%;
+                font-size: 20px;
+            }
+        }
+        .rightSide{
+            border-radius: 4%;
+            width: 40%;
+            background-color: rgb(245, 243, 241);
+            .gridHeading1{
+                @include commonHeading;
+                padding-top: 3%;
+                margin-left: 4%;
+             }
+            .wholeForm{
+                position: relative;
+                .phoneNumber{
+                    margin-top: 4%;
+                    margin-left: 4%;
+                    .inputStyle {
+                        font-size: 16px;
+                        background: #FFFFFF;
+                        border: 1px solid #CACACA;
+                        border-radius: 5px;
+                        width: 95%;
+                        outline: none;
+                        padding: 18.5px 14px 18.5px 58px;
+                        transition: box-shadow ease .25s,border-color ease .25s;
+                        &hover{
+                            border-color: #000 !important;
+                            background-color: blue;
+                        }
+                    }
+                }
+                .inputForm1{
+                    @include inputFormCSS;
+                    width: 44%;
+
+                }
+                .inputForm2{
+                    @include inputFormCSS;
+                    width: 93%; 
+                }
+                .formAgreement{
+                    margin-top: 4%;
+                    margin-left: 4%;
+                }
+            }
+        }
+    }
+    .imageTextFlex{
+        display: flex;
+        margin-top: 7%;
+        .iconLikeImage{
+            height:70px !important;
+            width: 70px !important;
+        }
+        .imageParagraph{
+            
+            color: rgb(82, 74, 69);
+            font-size: 20px;
+            .boldText{
+                font-size: 20px;
+                color: black;
+                font-weight: bold;
+                display: inline;
+            }
+        }
+    }
+}
+.react-tel-input .form-control {
+    width: 400px !important;
+}
+
+@media screen and (max-width: 1252px) {
+    .signUpWrapper{
+        .leftSide{
+            display: none;
+        }
+        .rightSide{
+            width: 60% !important;
+        }
+    }
+  }
+  @media screen and (max-width: 1352px) {
+    .signUpWrapper{
+        .textTop{
+            font-size: 18px;
+        }
+    }
+  }
+  @media screen and (max-width: 952px) {
+    .signUpWrapper{
+        .rightSide{
+            width: 100% !important;
+            padding-right: 3%;
+        }
+    }
+  }

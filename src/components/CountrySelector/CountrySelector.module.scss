@@ -1,0 +1,19 @@
+.autoComplete{
+    width: 29.8vw;
+    margin-top: 4%;
+    margin-left: 4%;
+    background-color:white;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .autoComplete{
+        width: 45vw;
+    }
+  }
+
+  @media screen and (max-width: 952px) {
+    .autoComplete{
+        width: 72.5vw;
+    }
+  }

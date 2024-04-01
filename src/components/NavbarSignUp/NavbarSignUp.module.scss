@@ -1,0 +1,29 @@
+.navbarWrapper{
+    .mainNavbar{
+        background-color: white;
+        box-shadow: none;
+        border-bottom: 1px solid rgb(217, 217, 217);
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contentSetting{
+        display: flex;
+        justify-content: space-between;
+    }
+    .honebricksLogoWithoutText {
+        margin: 1% 1% 1% 0%;
+    }
+    .middleText{
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .buttonRight{
+        color: rgb(67, 59, 206);
+        .buttonText{
+            margin-top: 8px;
+            text-transform: capitalize;
+        }
+    }
+    }

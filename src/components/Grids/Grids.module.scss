@@ -1,0 +1,9 @@
+.gridWrapper{
+    display: flex;
+    justify-content: center;
+    .gridItem{
+        display: grid;
+        justify-content: center;
+        max-width: fit-content;
+    }
+}

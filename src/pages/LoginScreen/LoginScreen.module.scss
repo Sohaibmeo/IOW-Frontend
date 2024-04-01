@@ -1,0 +1,148 @@
+
+.LoginScreenWrapper {
+  .remainingPage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #fbf9f7;
+  }
+
+  .desPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0px;
+  }
+
+  .fPart {
+    margin-top: 60px;
+    z-index: 100;
+    transition: width 0.5s ease-in-out 0s;
+    position: relative;
+    min-height: calc(100vh - 4.125rem);
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .liveMessageIcon {
+    // top: 55rem;
+    top: 800px;
+    left: 0rem;
+    position: fixed;
+        display: flex !important;
+            float: left !important;
+                display: initial !important;
+
+  }
+
+  @media(max-width: 912px) {
+     .desPart {
+       margin-left: 20px;
+        
+     }
+    //  .liveMessageIcon {
+    //    top: 800px;
+    //    left: 2rem;
+    //    position: fixed;
+    //  }
+  }
+  @media(max-width: 540px) {
+    .fPart {
+      margin-left: 60px;
+
+
+  }}
+  @media(max-width: 540px) {
+    .desPart {
+display:none;
+    }
+    .fPart{
+      margin-left: 600px;
+    }
+    .remainingPage{
+    margin-left: -155px;
+        padding-left: 139px;
+
+    }
+
+  }
+   @media(max-width: 767px) {
+     .desPart {
+       display: none;
+     }
+
+     .fPart {
+       padding-left: 0px;
+       width:100%;
+       margin-left: 0px;
+     }
+
+     .remainingPage {
+      //  margin-left: -155px;
+      //  padding-left: 139px;
+
+     }
+
+   }
+  @media(max-width: 280px) {
+    .desPart {
+      display: none;
+    }
+
+    .fPart {
+      margin-left: 600px;
+    }
+
+    .remainingPage {
+      margin-left: -155px;
+      padding-left: 139px;
+
+    }
+
+  }
+
+  @media(max-width: 786px) {
+ 
+    .desPart {
+      margin-left: 10px;
+    }
+   
+  }
+
+  @media screen and (max-width: 1024px) {
+ 
+
+    // .liveMessageIcon {
+    //   top: 650px;
+    //   left: 2rem;
+    //   position: fixed;
+    // }
+  }
+@media screen and (max-width: 360px) {
+
+
+  // .liveMessageIcon {
+  //   top: 650px;
+  //   left: 2rem;
+  //   position: fixed;
+  // }
+}
+  @media screen and (max-width: 1300px) {
+    
+
+    .fPart {
+      margin-left: 50px;
+    }
+
+    // .liveMessageIcon {
+    //   top: 840px;
+    //   left: 1.25rem;
+    //   position: fixed;
+    // }
+
+  }
+    
+  
+
+}
